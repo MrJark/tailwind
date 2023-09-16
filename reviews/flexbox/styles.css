@@ -50,26 +50,41 @@ body, html {
 .container-2 {
     display: flex; 
 
-    flex-wrap: wrap; 
     justify-content: center; 
-    align-content: flex-end;
+    align-items: center;
     
     background-color: #65656a;
     padding: 12px;
     margin: 12px 0px;
     border-radius: 8px;
+    height: 600px;
 }
 
-.box-2 {
+.c {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: solid 1px #bdbdbd;
+    border: solid 1px transparent;
     border-radius: 12px;
-    background-color: rgb(248, 250, 255);
-    color: #111;
     width: 128px;
     height: 128px; 
     margin: 8px;
+    color: #111;
+}
+
+/* los hijos del container-2, el 1 tb valdría para sus hijos, tinen la capacidad de ser ordenador con la propiedad order */
+
+.c-1 {
+    background-color: lightcoral;
+    order: 2;
+    flex-grow: 4; /* modifica el tamaño dándole prioridad en comparación a los otros hijos */
+}
+.c-2 {
+    background-color: lightskyblue;
+    order: 3;
+    flex-basis: 10%; /* es como un width normal pero con este le das prioridad a este. ESTE SE UTILIZA CUANDO ESTÁS USANDO FLEX/FLEXBOX tiene una mejor compatibilidad */
+}
+.c-3 {
+    background-color: lightseagreen;
+    order: 1;
 }
