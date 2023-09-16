@@ -1,0 +1,18 @@
+/*
+Este sería un fichero para los módulos o las anidaciones. Para separar código y que se vea más limpio
+
+Para que este funcione, se necesita que el nombre de estos filcheros NO PRINCIPALES tengan un ' _ ' delante del nombre (guión bajo)
+
+Y para cagar este módulo, tengo que poner en el archivo original, al inicio, que es lo recomendable, un @use 'nombre_del_fichero'
+*/
+
+
+.f {
+    h2 {
+        color: greenyellow;
+    }
+
+    p {
+        color: rgb(210, 79, 79);
+    }
+}

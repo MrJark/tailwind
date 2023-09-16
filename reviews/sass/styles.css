@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*
+    Para compilarlo, en la terminal de comandas debes poner:
+    sass --watch styles.scss styles.css
+
+    La linea anterior lo que te dice es que el fichero sass con la extensión scss ( la extensión .sass no funciona igual que los archivos css y no es igual de facil de escribirlo ) se tiene que transformar en un archivo .css.
+
+    Y para que lo aplique, tienes que importarlo en el index. Pero tienes que importar el archivo styles.css que te cree sass no en el que estás escrbiendo
+*/
+/*
+Este sería un fichero para los módulos o las anidaciones. Para separar código y que se vea más limpio
+
+Para que este funcione, se necesita que el nombre de estos filcheros NO PRINCIPALES tengan un ' _ ' delante del nombre (guión bajo)
+
+Y para cagar este módulo, tengo que poner en el archivo original, al inicio, que es lo recomendable, un @use 'nombre_del_fichero'
+*/
+.f h2 {
+  color: greenyellow;
+}
+.f p {
+  color: rgb(210, 79, 79);
+}
+
+/*---------*/
+body {
+  background-color: #202128;
+  color: #f5f5f5;
+  font-family: "Ubuntu", "Courier New", Courier, monospace;
+  margin: 20px;
+  margin-bottom: 200px;
+}
+
+.c h2 {
+  color: #f00b76;
+}
+.c p {
+  color: rgb(115, 211, 115);
+}
+
+.nueva_caja {
+  background-color: greenyellow;
+  border: 1px solid white;
+  box-shadow: 0px 0px 4px pink;
+  color: #f00b76;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,50 @@
+// Para aplicar sass no puedes hacerlo de forma directa como con css, primero hay que compilarlo
+/*
+    Para compilarlo, en la terminal de comandas debes poner:
+    sass --watch styles.scss styles.css
+
+    La linea anterior lo que te dice es que el fichero sass con la extensión scss ( la extensión .sass no funciona igual que los archivos css y no es igual de facil de escribirlo ) se tiene que transformar en un archivo .css.
+
+    Y para que lo aplique, tienes que importarlo en el index. Pero tienes que importar el archivo styles.css que te cree sass no en el que estás escrbiendo
+*/
+
+// modulos
+@use 'anidacion';
+
+// creación de variables variables
+$color-primary: #f00b76;
+
+
+/*---------*/
+body {
+    background-color: #202128;
+    color: #f5f5f5;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+    margin: 20px ;
+    margin-bottom: 200px;
+}
+
+// Anidaciones
+.c {
+    h2 {
+        color: $color-primary
+    }
+
+    p {
+        color: rgb(115, 211, 115);
+    }
+}
+
+// Mixins ( son funciones que personalizas que pueden recibir parámetros )
+@mixin personalizacion_c( $fondo: black ) { // le pùedes pasar las variables que queiras
+    background-color: $fondo;
+    border: 1px solid white;
+    box-shadow: 0px 0px 4px pink;
+    color: $color-primary
+}
+
+.nueva_caja {
+    @include personalizacion_c( $fondo: greenyellow ) // necesitas el @include
+}
+
+// Operators ( es parecido al calc() de css )
