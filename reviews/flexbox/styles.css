@@ -1,0 +1,75 @@
+
+body, html {
+    background-color: #202128;
+    color: #f5f5f5;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+    margin: 20px ;
+    margin-bottom: 200px;
+}
+
+
+.container-1 {
+    display: flex; /* los pone en fromato horizontal */
+    /* flex-direction: column; /* con esto cambias el fromato, De fila, row, a columna, colum */
+    /* flex-direction: column-reverse; */ /* organiza los elementos al revés */
+    flex-direction: row; /* para colocarlo en formato row de izq a der */
+    /* flex-direction: row-reverse; */ /* para colocarlo en formato row de der a izq */
+
+    /* si añades muchas cajas, lo que hará el container será intentar introducirlas todas en el espacio que tiene ya que por defecto está en ' nowrap '  */
+    /* flex-wrap: nowrap; /* esta es por defecto y es la que te dice que ocupe todo el container en la misma fila o columna */
+    flex-wrap: wrap; /* los acomoda para que todos tengan su tamaño, el del box, y el que se ajusta es el container */
+
+    /* flex-flow: row wrap ; /* esta propiedad combina el flex-direction como el flex-wrap en una sola linea y tiene las mismas funciones que las dos anteriores */
+
+    /* ajuste de los elementos */
+    justify-content: center; /* ajusta el contenido dependiendo de lo que quieras respecto al eje x*/
+    align-content: flex-end; /* alinea el content respecto al eje y y se ajustará al tamaño que tenga el container*/ 
+    /* no tienen las mismas propiedades un align-content que un align-items */
+
+    background-color: #39393e;
+    padding: 12px;
+    margin: 12px 0px;
+    border-radius: 8px;
+    height: 700px;
+}
+
+.box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 1px #bdbdbd;
+    border-radius: 12px;
+    background-color: rgb(248, 250, 255);
+    color: #111;
+    width: 128px;
+    height: 128px; /* si las cajas no tienen un tamaño, si aumentas el container, estas ocuparán el 100% del mismo porque les das la mano y te cojen el brazo */
+    margin: 8px;
+}
+
+.container-2 {
+    display: flex; 
+
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-content: flex-end;
+    
+    background-color: #65656a;
+    padding: 12px;
+    margin: 12px 0px;
+    border-radius: 8px;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 1px #bdbdbd;
+    border-radius: 12px;
+    background-color: rgb(248, 250, 255);
+    color: #111;
+    width: 128px;
+    height: 128px; 
+    margin: 8px;
+}
