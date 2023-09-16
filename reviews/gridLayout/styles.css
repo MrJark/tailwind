@@ -1,0 +1,182 @@
+
+body, html {
+    background-color: #202128;
+    color: #f5f5f5;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+    margin: 20px ;
+    margin-bottom: 200px;
+}
+
+.layout {
+    background-color: gray;
+    border-radius: 18px;
+    padding: 16px;
+    height: auto;
+
+    display: grid;
+    /* modificación de las columnas */
+    /* grid-template-columns: auto auto; /* con esto tienes dos columnas, Y así sucesivamente con forme queiras columnas, le añades más*/
+    grid-template-columns: 20% auto 50%; /* también puedes darles porcentajes del total y el auto a la vez*/
+    
+    /* modificación de las filas */
+    grid-template-rows: 100px 50px auto auto;
+
+    justify-content: flex-end; /* ten en cuenta que los que dejes como auto en los templates, cogeran el hueco que se les deje */
+}
+
+.c {
+    /* width: 150px;
+    height: 150px; */
+    color: #111;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: solid 2px rgb(51, 51, 51);
+    border-radius: 12px;
+    background-color: rgb(108, 236, 193);
+    text-align: center;
+    line-height: 150px;
+    margin: 8px 0px;
+}
+
+/*2 grid colum*/
+.layout2 {
+    background-color: gray;
+    border-radius: 18px;
+    padding: 16px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+.c1 {
+    /* width: 150px;
+    height: 150px; */
+    color: #111;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: solid 2px rgb(51, 51, 51);
+    border-radius: 12px;
+    background-color: rgb(108, 236, 193);
+    text-align: center;
+    line-height: 150px;
+    margin: 8px 0px;
+}
+
+.d10 {
+    /* las lineas son los vertices de las cajas que ocupan. En este caso 2 como hay 3 columnas, tienes 4 lineas mienstras que en las filas tienes 4 filas y 5 lineas */
+    grid-column: 1/3 ; /* le dice que vaya desde la linea 1, el inicio, hasta la linea 3 ( el final de la segunda columna) Y las demas cajas se acomodan partiendo de esta modificación */
+    background-color: lightblue;
+}
+
+.d9 {
+    grid-column: 2/4;
+    background-color: lightslategrey;
+}
+
+.d8 {
+    grid-column: 1/4;
+    background-color: azure;
+}
+
+.d1 {
+    grid-column: 1/ span 2; /* span le dice que se expanda hasta donde le diga pero en COLUMNAS por tanto, solo puedo expandirlo hasta la columna 3 en este segundo caso */
+}
+
+
+/*3 grid row*/
+.layout2 {
+    background-color: gray;
+    border-radius: 18px;
+    padding: 16px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+.c2 {
+    color: #111;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: solid 2px rgb(51, 51, 51);
+    border-radius: 12px;
+    background-color: rgb(108, 236, 193);
+    text-align: center;
+    line-height: 150px;
+    margin: 8px 0px;
+}
+
+.e1 {
+    grid-row: 1/ 3; /* igual que el grid-colum pero para las filas*/
+    background-color: lightblue;
+}
+
+.e2 {
+    grid-area: 1 / 1 / 3 / 4;
+    background-color: lightslategrey;
+}
+
+.e3 {
+
+    background-color: azure;
+}
+
+.e7 {
+    grid-area: 3 / 2;
+}
+
+
+/*3 grid template area*/
+.layout3 {
+    background-color: gray;
+    border-radius: 18px;
+    padding: 16px;
+    height: auto;
+    display: grid;
+    /* le estableces como va a estar predispuesto el contendio y dependiendo de la cantidad de veces que lo repitas en la misma fila y la cantida de columnas que hagas, así será como esté predispuesto y el espacio que tome*/    
+    grid-template-areas: 
+        'cabecera cabecera aside'
+        'main main aside'
+        'menu content aside'
+        'footer footer footer'
+    ;
+    /* como has hecho que se distribuya así, puedes ahora usar el grid-template-colums y rows para dar tamañao y la candidad de espacio que quieres que ocupen */
+    grid-template-columns: 45% 45% 10%; /* modifica el tamaño de las columnas */
+    grid-template-rows: 10% 20% 60% 10%; /* modifica el tamaño de las filas */
+}
+
+.c3 {
+    color: #111;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: solid 2px rgb(51, 51, 51);
+    border-radius: 12px;
+    background-color: rgb(108, 236, 193);
+    text-align: center;
+    line-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f1 {
+    /* con el griud area asignas a cada hijo la psoición que le has mandado que queires que tenga según el padre y las veces que quieres que lo ocupe */ 
+    grid-area: cabecera;
+    background-color: brown;
+}
+
+.f2 {
+    grid-area: main;
+    
+}
+.f3 {
+    grid-area: menu;
+}
+.f4 {
+    grid-area: content;
+}
+.f5 {
+    grid-area: footer;
+}
+.f6 {
+    grid-area: aside;
+}
