@@ -8,7 +8,9 @@ Este curso que estoy siguiendo es de [UDemy](https://www.udemy.com), más concre
 
 ## Instalaciones y dependencias
 
-- Tailwind con postCSS y la dependencia **npm install -D tailwindcss postcss autoprefixer**
+- Inicio el proyecto con **npm** y **vite**
+
+- Tailwind con postCSS y la dependencia **npm install -D tailwindcss postcss autoprefixer** y **npx tailwindcss init -p**
 
   Cuando instalas los paquetes necesitas que tailwind cree la carpeta styles con todas las dependencias y para ello en el package.json tienes que poner en el **script**:
 
