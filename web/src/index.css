@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/*FUENTES PERSONALIZADAS*/
-/* @font-face{
+/*FUENTES PERSONALIZADAS ( no he conseguido que funcionen en el proyecto )*/
+/*@font-face{
     font-family: "TrebuchetMS";
     src: url('fonts/TrebuchetMS.ttf');
     font-weight: normal;
@@ -19,11 +19,11 @@
 
 @font-face{
     font-family: "WebSymbolsRegular";
-    src: url('fonts/websymbols-regular-webfont.eot');
-    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/websymbols-regular-webfont.woff') format('woff'),
-         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
-         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    src: url('/assets/fonts/websymbols-regular-webfont.eot');
+    src: url('/assets/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,5 +56,21 @@
     
     .text-banner { /* una clase con css aplicables a tailwind gracias a estar adentro del components */
         text-shadow: 1px 1px 1px;
+    }
+
+    #card {
+        @apply flex-1 rounded-xl h-80 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 ml-3 mr-3 cursor-pointer transition duration-300
+    }
+
+    .card-icon {
+        @apply block w-full h-32 text-6xl text-center mt-12 transition duration-300
+    }
+
+    .card-category {
+        @apply w-full h-12 text-lg font-medium text-center tracking-widest text-green-dabadi transition duration-300
+    }
+
+    .card-description {
+        @apply
     }
 }

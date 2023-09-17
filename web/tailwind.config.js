@@ -27,7 +27,8 @@ export default {
       animation: {
         'pulse-low': "pulse 4s linear infinite",
         'from-right': "fromRight 300ms linear",
-        'bg-banner': 'bgBanner 10s linear',
+        'bg-banner': 'bgBanner 5s linear',
+        'text-banner': 'showBannerText 5s linear'
       },
       keyframes: { // como en CSS, pones los % de donde empieza, los intermedios, y donde acaba y pones lo que quieres que haga en esos tiempos
         fromRight: {
@@ -40,6 +41,25 @@ export default {
         bgBanner: {
           '0%': {'background-position': '0px 0px'} ,
           '100%': {'background-position': '-800px -200px'}
+        },
+        showBannerText: {
+          '0%': {
+            transform: "translateX(-600%) scale(3,3)",
+            opacity: 1
+          },
+          '50%': {
+            transform: "translateX(600%) scale(3,3)",
+            opacity: 1
+          },
+          '75%': {
+            transform: 'translateX(-600%) scale(3,3)',
+            color: 'transparent',
+            opacity: 0
+          },
+          '100%': {
+            transform: 'translateX(0%) scale(1,1)',
+            opacity: 1
+          }
         },
       }
     },
