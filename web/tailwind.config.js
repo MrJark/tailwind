@@ -6,7 +6,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,html}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'background-img': "url('/web/src/assets/img/pattern.png')" // no funciona
+      },
+      fontFamily: {
+        ubuntu: 'Ubuntu, ui-serif'
+      }
+    },
   },
   plugins: [],
 }
