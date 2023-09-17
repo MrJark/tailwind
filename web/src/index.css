@@ -43,14 +43,18 @@
 @layer components {
 
     .to_ul{
-        @apply flex flex-row h-20 items-center justify-end text-xl text-center
+        @apply flex flex-row h-20 items-center text-xl text-center xs:mr-0 xs:text-center md:justify-end;
     }
 
     .to_li {
-        @apply mr-2 ml-5 tracking-wider flex-none
+        @apply mr-2 ml-5 tracking-wider flex-none xs:flex-1;
     }
 
     .to_li_a {
-        @apply block transition duration-200 hover:text-purple-300
+        @apply block transition duration-200 hover:text-purple-300;
+    }
+    
+    .text-banner { /* una clase con css aplicables a tailwind gracias a estar adentro del components */
+        text-shadow: 1px 1px 1px;
     }
 }

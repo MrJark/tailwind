@@ -8,14 +8,14 @@
     <title>Tailwind Web</title>
   </head>
   <body 
-    class="font-ubuntu bg-neutral-900 text-gray-200 border-8 border-red-400 sm:border-yellow-300 md:border-green-300 lg:border-blue-300 xl:border-purple-300"
+    class="m-2 font-ubuntu bg-neutral-900 text-gray-200 "
     >
     <header 
       id="header"
-      class=" text-gray-100 h-20"  
+      class=" text-gray-100 h-20 xs:h-36 "  
     >
-      <div class="container mx-auto flex flex-row">
-        <div class=" self-center flex-1">
+      <div class="container mx-auto flex flex-row xs:flex-col xs:mt-4">
+        <div class=" self-center flex-1 xs:mx-auto">
           <div 
             id="logo"
             class="group w-52 text-center tracking-wider cursor-pointer overflow-hidden rounded-md" 
@@ -25,7 +25,7 @@
             >Tailwind</h3>
           </div>
         </div>
-        <nav class="felx-1">
+        <nav class="felx-1 xs:">
           <ul 
             class="to_ul">
             <li 
@@ -46,13 +46,24 @@
         </nav>
       </div>
     </header>
+    <section class=" container w-11/12 mx-auto">
+
+      <div id="banner"
+        class="h-28 w-full bg-background-banner-img rounded-2xl shadow-xl shadow-blue-300/20 mx-auto overflow-hidden m-5 bg-banner-position animate-bg-banner"
+      >
+        <h1
+          class="block text-5xl text-gray-950 font-normal tracking-wide m-7 mx-auto text-center "
+        >Cursos de manejo de Tailwind</h1>
+      </div>
+
+    </section>
 
   
 
 
 
 
-    <footer class=' text-xl font-normal text-center mt-12 mb-12 '>
+    <footer class='tracking-widest text-xl font-normal text-center mt-12 mb-12 '>
       Make with 💜 by <a class=" text-purple-400 hover:text-purple-dabadi hover:animate-pulse hover:underline" href="https://www.linkedin.com/in/mrjark/">mrjark</a>
     </footer>
     <!-- <div id="root"></div>

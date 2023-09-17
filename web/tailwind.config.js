@@ -11,7 +11,11 @@ export default {
         'xs': {'max': '768px'}
       },
       backgroundImage: {
-        'background-img': "url('/web/src/assets/img/pattern.png')" // no funciona
+        'background-img': "url('./assets/img/pattern.png')", // no funcionaba porque tenia la ruta como ./src/assets... y lo que me he dado cuenta es que no hay que poner el src en estos casos
+        'background-banner-img': "url('./assets/img/bakbaner.png')" 
+      },
+      backgroundPosition: {
+        'banner-position': '-800px -200px', // para que se vea el cohete en el banner
       },
       fontFamily: {
         ubuntu: 'Ubuntu, ui-serif'
@@ -22,7 +26,8 @@ export default {
       },
       animation: {
         'pulse-low': "pulse 4s linear infinite",
-        'from-right': "fromRight 300ms linear"
+        'from-right': "fromRight 300ms linear",
+        'bg-banner': 'bgBanner 10s linear',
       },
       keyframes: { // como en CSS, pones los % de donde empieza, los intermedios, y donde acaba y pones lo que quieres que haga en esos tiempos
         fromRight: {
@@ -31,7 +36,11 @@ export default {
           // '50%': { transform: 'translateX(0%)'},
           // '75%': { transform: 'translateX(20%)'},
           '100%': { transform: 'translateX(0%)'}
-        }
+        },
+        bgBanner: {
+          '0%': {'background-position': '0px 0px'} ,
+          '100%': {'background-position': '-800px -200px'}
+        },
       }
     },
   },
