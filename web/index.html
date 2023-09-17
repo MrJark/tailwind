@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="./src/index.css">
     <title>Tailwind Web</title>
   </head>
-  <body class=" m-8 font-ubuntu bg-neutral-900 text-gray-200">
+  <body 
+    class="font-ubuntu bg-neutral-900 text-gray-200 border-8 border-red-400 sm:border-yellow-300 md:border-green-300 lg:border-blue-300 xl:border-purple-300"
+    >
     <header 
       id="header"
       class=" text-gray-100 h-20"  
     >
       <div class="container mx-auto flex flex-row">
-        <div class="self-center flex-1">
+        <div class=" self-center flex-1">
           <div 
             id="logo"
-            class="w-52 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-md" 
+            class="group w-52 text-center tracking-wider cursor-pointer overflow-hidden rounded-md" 
           >
             <h3
-              class=" animate-pulse-low bg-clip-text text-transparent bg-gradient-to-r from-green-dabadi to-purple-dabadi text-5xl font-medium "
+              class=" group-hover:animate-from-right block bg-clip-text text-transparent bg-gradient-to-r from-green-dabadi to-purple-dabadi text-5xl font-medium "
             >Tailwind</h3>
           </div>
         </div>
@@ -51,7 +53,7 @@
 
 
     <footer class=' text-xl font-normal text-center mt-12 mb-12 '>
-      Make with 💜 by <a class=" text-purple-400 hover:text-purple-dabadi hover:animate-pulse hover:underline" href="https://linkedin/in/mrjark">mrjark</a>
+      Make with 💜 by <a class=" text-purple-400 hover:text-purple-dabadi hover:animate-pulse hover:underline" href="https://www.linkedin.com/in/mrjark/">mrjark</a>
     </footer>
     <!-- <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script> -->

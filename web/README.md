@@ -53,3 +53,5 @@ Este curso que estoy siguiendo es de [UDemy](https://www.udemy.com), más concre
 - Para añadir nuevas reglas, puedes ir al src/input.css y añadir **@layer**. Estos son funionalidades de tailwind que te permiten extender las clases y nombrar un conjunto de ellas para maquetar componentes y hacerlo reutilizable
 
 - El cambio de colores en las letras en tailwind es con **[Background Clip](https://tailwindcss.com/docs/background-clip)**
+
+- Para usar la animaciones en un grupo de elementos pero que solo quieres animar 1, los elementos padre deben tener la clase **group** y el hijo, el cual vas a animar, puede ser uno o varios, la clase **group-hover:<propiedad que quieras>**. En este caso he puesto al hacer hover, pero puede ser cualquiera. [LINK](https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state)
