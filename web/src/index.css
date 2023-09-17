@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /*FUENTES PERSONALIZADAS*/
-@font-face{
+/* @font-face{
     font-family: "TrebuchetMS";
     src: url('fonts/TrebuchetMS.ttf');
     font-weight: normal;
@@ -35,4 +35,22 @@
 
 .bebas {
     font-family: "BebasNeue";
+}
+*/
+
+/* Componentes personalizados ( clases para no repetirlos en todos ) para ello tienes que tener el @layer, como en sass, y la palabra component y a partir de ahí creas las clases que queiras como en un css normal pero antes de estos estilos colocas el @apply y por tanto, en la propiedad de html o el archivo que quieras, solo tienes que añadirle la clase con el nombre el cual has configurado */
+
+@layer components {
+
+    .to_ul{
+        @apply flex flex-row h-20 items-center justify-end text-xl text-center
+    }
+
+    .to_li {
+        @apply mr-2 ml-5 tracking-wider flex-none
+    }
+
+    .to_li_a {
+        @apply block transition duration-200 hover:text-purple-300
+    }
 }

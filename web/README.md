@@ -48,6 +48,8 @@ Este curso que estoy siguiendo es de [UDemy](https://www.udemy.com), más concre
 
 -
 
-## Comentarios
+## Comentarios (tb los hay en los archivos)
 
 - Para añadir nuevas reglas, puedes ir al src/input.css y añadir **@layer**. Estos son funionalidades de tailwind que te permiten extender las clases y nombrar un conjunto de ellas para maquetar componentes y hacerlo reutilizable
+
+- El cambio de colores en las letras en tailwind es con **[Background Clip](https://tailwindcss.com/docs/background-clip)**

@@ -12,6 +12,13 @@ export default {
       },
       fontFamily: {
         ubuntu: 'Ubuntu, ui-serif'
+      },
+      colors: {
+        'green-dabadi': "#4FE5B8",
+        'purple-dabadi': "#A87FFF"
+      },
+      animation: {
+        'pulse-low': "pulse 4s linear infinite"
       }
     },
   },

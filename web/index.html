@@ -7,25 +7,38 @@
     <link rel="stylesheet" href="./src/index.css">
     <title>Tailwind Web</title>
   </head>
-  <body class=" font-ubuntu bg-neutral-900 text-gray-200">
+  <body class=" m-8 font-ubuntu bg-neutral-900 text-gray-200">
     <header 
       id="header"
       class=" text-gray-100 h-20"  
     >
       <div class="container mx-auto flex flex-row">
-        <div class="flex-1" id="logo">
-          <span class="symbol">
-            S
-          </span>
-          <h3>Tailwind</h3>
+        <div class="self-center flex-1">
+          <div 
+            id="logo"
+            class="w-52 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-md" 
+          >
+            <h3
+              class=" animate-pulse-low bg-clip-text text-transparent bg-gradient-to-r from-green-dabadi to-purple-dabadi text-5xl font-medium "
+            >Tailwind</h3>
+          </div>
         </div>
         <nav class="felx-1">
-          <ul>
-            <li>
-              <a href="#">Inicio</a>
-              <a href="#">Blog</a>
-              <a href="#">Contacto</a>
-              <a href="#">Formación</a>
+          <ul 
+            class="to_ul">
+            <li 
+              class="to_li"
+            >
+              <a class="to_li_a" href="#">Inicio</a>
+            </li>
+            <li  class="to_li">
+              <a class="to_li_a" href="#">Blog</a>
+            </li>
+            <li  class="to_li">
+              <a class="to_li_a" href="#">Formación</a>
+            </li>
+            <li  class="to_li">
+              <a class="to_li_a" href="#">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -37,8 +50,8 @@
 
 
 
-    <footer class=' text-xl font-semibold text-center mt-12 mb-12 '>
-      Make with 💜 by <a class=" text-purple-400 hover:text-purple-600 hover:underline" href="https://linkedin/in/mrjark">mrjark</a>
+    <footer class=' text-xl font-normal text-center mt-12 mb-12 '>
+      Make with 💜 by <a class=" text-purple-400 hover:text-purple-dabadi hover:animate-pulse hover:underline" href="https://linkedin/in/mrjark">mrjark</a>
     </footer>
     <!-- <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script> -->
