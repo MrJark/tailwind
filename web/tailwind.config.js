@@ -28,7 +28,8 @@ export default {
         'pulse-low': "pulse 4s linear infinite",
         'from-right': "fromRight 300ms linear",
         'bg-banner': 'bgBanner 5s linear',
-        'text-banner': 'showBannerText 5s linear'
+        'text-banner': 'showBannerText 5s linear',
+        'show-card-icon': 'showCardIcon 300ms linear',
       },
       keyframes: { // como en CSS, pones los % de donde empieza, los intermedios, y donde acaba y pones lo que quieres que haga en esos tiempos
         fromRight: {
@@ -61,8 +62,24 @@ export default {
             opacity: 1
           }
         },
+        showCardIcon: { //hacer el from y to es como decir del 0% al 100%
+          'from': {
+            transform: "translateY(-200%)",
+            opacity: 0
+          },
+          'to': {
+            transform: "translateY(0%)",
+            opacity: 1
+          }
+        },
       }
     },
+  },
+  variants: {
+    animation: ['responsive', 'hover', 'group-hover'],
+    animate: ['responsive', 'hover', 'group-hover'],
+    fontSize: ['responsive', 'hover', 'group-hover'],
+    scale: ['responsive', 'hover', 'group-hover'],
   },
   plugins: [],
 }

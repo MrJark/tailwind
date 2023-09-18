@@ -59,18 +59,18 @@
     }
 
     #card {
-        @apply flex-1 rounded-xl h-80 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 ml-3 mr-3 cursor-pointer transition duration-300
+        @apply flex-1 rounded-xl h-80 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 ml-3 mr-3 cursor-pointer transition duration-300 hover:bg-neutral-900 hover:shadow-md hover:shadow-slate-600
     }
 
     .card-icon {
-        @apply block w-full h-32 text-6xl text-center mt-12 transition duration-300
+        @apply block w-full h-28 text-6xl text-center mt-12 transition duration-300
     }
 
     .card-category {
-        @apply w-full h-12 text-lg font-medium text-center tracking-widest text-green-dabadi transition duration-300
+        @apply w-full h-12 text-lg font-medium text-center tracking-widest text-green-dabadi transition duration-300 mb-3
     }
 
     .card-description {
-        @apply
+        @apply text-center text-gray-50 text-base transition duration-300
     }
 }
