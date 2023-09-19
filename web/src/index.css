@@ -58,19 +58,23 @@
         text-shadow: 1px 1px 1px;
     }
 
+    #cards-container {
+        @apply grid gap-1 grid-cols-4 grid-rows-1 sm:self-center sm:grid-rows-1 sm:grid-cols-1 sm:gap-8 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 
+    }
+
     #card {
-        @apply flex-1 rounded-xl h-80 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 ml-3 mr-3 cursor-pointer transition duration-300 hover:bg-neutral-900 hover:shadow-md hover:shadow-slate-600
+        @apply flex-1 rounded-xl h-80 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 cursor-pointer transition duration-300 hover:bg-neutral-900 hover:shadow-md hover:shadow-slate-600 md:h-60 md:m-2 lg:h-80 lg:m-5 
     }
 
     .card-icon {
-        @apply block w-full h-28 text-6xl text-center mt-12 transition duration-300
+        @apply block w-full h-28 text-6xl text-center mt-12 transition duration-300 md:mt-6 lg:mt-0
     }
 
     .card-category {
-        @apply w-full h-12 text-lg font-medium text-center tracking-widest text-green-dabadi transition duration-300 mb-3
+        @apply w-full h-12 text-lg font-medium text-center tracking-widest text-green-dabadi transition duration-300 mb-3 lg:text-base md:text-base
     }
 
     .card-description {
-        @apply text-center text-gray-50 text-base transition duration-300
+        @apply text-center text-gray-50 text-base transition duration-300 lg:text-xs lg:mt-2 lg:block 
     }
 }
