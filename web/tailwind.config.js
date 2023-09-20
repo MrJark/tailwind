@@ -17,6 +17,9 @@ export default {
       backgroundPosition: {
         'banner-position': '-800px -200px', // para que se vea el cohete en el banner
       },
+      boxShadow: {
+        header3D: '0px 1px #393d3f'
+      },
       fontFamily: {
         ubuntu: 'Ubuntu, ui-serif'
       },

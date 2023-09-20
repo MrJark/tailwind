@@ -77,4 +77,8 @@
     .card-description {
         @apply text-center text-gray-50 text-base transition duration-300 lg:text-xs lg:mt-2 lg:block 
     }
+
+    .article-header {
+        @apply flex justify-center items-center w-full h-24 text-5xl tracking-widest leading-10
+    }
 }

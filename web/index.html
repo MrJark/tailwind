@@ -108,27 +108,34 @@
         </div>
       </div>
     </section>
-    <main>
-      <aside id="aside">
+    <main class="container w-11/12 mx-auto flex flex-row">
+      <aside id="aside" class="min-h-full order-2 flex-none w-72 mt-5">
         <h3>Search</h3>
-        <div id="search">
+        <div id="sarch-container">
+
           <form action="">
-            <label for="search"></label>
-            <input placeholder="Growth" type="text">
+            <label for="search">Search</label>
+            <input id="search" name="search" placeholder="Growth" type="text">
             <button>Search</button>
           </form>
+
         </div>
         <h3>Login</h3>
-        <div id="search">
+        <div id="submit-container">
+
           <form action="submit">
             <div>
               <label for="name">Nombre</label>
-              <input name="name" placeholder="Chema" type="text">
+              <input id="name" name="name" placeholder="Chema" type="text" autocomplete="name">
             </div>
 
-            <label for="email">Email</label>
-            <input name="email" placeholder="chema@example.com" type="email">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" placeholder="chema@example.com" type="email" autocomplete="email">
+            </div>
+
             <button>Log In</button>
+
           </form>
         </div>
 
@@ -149,8 +156,72 @@
         </div>
       </aside>
 
-      <section>
+      <section class="flex-grow order-1 mr-10 rounded mt-5 mx-auto">
+        <h2 class="article-header">Últimos artículos</h2>
 
+        <article class="w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-lg hover:shadow-neutral-600 mt-8">
+
+          <div class="grid grid-row-2 float-right bg-neutral-700 p-2 rounded-lg shadow-md shadow-neutral-600 -m-2.5">
+            <span>Fecha: {new Data}</span>
+            <span class="font-medium">Categorías: <b class="text-yellow-300">Growth</b></span>
+          </div>
+
+          <h4 class="text-gray-100 text-3xl m-1">
+           Título del artículo
+          </h4>
+
+          <p class="text-gray-400 text-lg tracking-wider mt-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, autem dolor exercitationem natus recusandae placeat, debitis ipsam vitae corporis maiores mollitia non iure minus. Molestiae, amet sed. Consectetur, eveniet quidem?
+            Voluptatem amet laborum voluptate eum sit in libero consequatur quia excepturi ut dolorum eligendi dolores eaque dolore distinctio, odio iste, doloribus ab nulla ipsa assumenda voluptates? Ipsam optio pariatur laudantium.
+          </p>
+
+          <p class=" mt-3">
+            <a class="text-xl text-green-dabadi font-semibold hover:animate-pulse" href="">Ir al artículo</a>
+          </p>
+
+        </article>
+        <article class="w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-lg hover:shadow-neutral-600 mt-8">
+
+          <div class="grid grid-row-2 float-right bg-neutral-700 p-2 rounded-lg shadow-md shadow-neutral-600 -m-2.5">
+            <span>Fecha: {new Data}</span>
+            <span class="font-medium">Categorías: <b class="text-blue-300">Behavioral</b></span>
+          </div>
+
+          <h4 class="text-gray-100 text-3xl m-1">
+           Título del artículo
+          </h4>
+
+          <p class="text-gray-400 text-lg tracking-wider mt-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, autem dolor exercitationem natus recusandae placeat, debitis ipsam vitae corporis maiores mollitia non iure minus. Molestiae, amet sed. Consectetur, eveniet quidem?
+            Voluptatem amet laborum voluptate eum sit in libero consequatur quia excepturi ut dolorum eligendi dolores eaque dolore distinctio, odio iste, doloribus ab nulla ipsa assumenda voluptates? Ipsam optio pariatur laudantium.
+          </p>
+
+          <p class=" mt-3">
+            <a class="text-xl text-green-dabadi font-semibold hover:animate-pulse" href="">Ir al artículo</a>
+          </p>
+
+        </article>
+        <article class="w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-lg hover:shadow-neutral-600 mt-8">
+
+          <div class="grid grid-row-2 float-right bg-neutral-700 p-2 rounded-lg shadow-md shadow-neutral-600 -m-2.5">
+            <span>Fecha: {new Data}</span>
+            <span class="font-medium">Categorías: <b class="text-green-300">Startups</b></span>
+          </div>
+
+          <h4 class="text-gray-100 text-3xl m-1">
+           Título del artículo
+          </h4>
+
+          <p class="text-gray-400 text-lg tracking-wider mt-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, autem dolor exercitationem natus recusandae placeat, debitis ipsam vitae corporis maiores mollitia non iure minus. Molestiae, amet sed. Consectetur, eveniet quidem?
+            Voluptatem amet laborum voluptate eum sit in libero consequatur quia excepturi ut dolorum eligendi dolores eaque dolore distinctio, odio iste, doloribus ab nulla ipsa assumenda voluptates? Ipsam optio pariatur laudantium.
+          </p>
+
+          <p class=" mt-3">
+            <a class="text-xl text-green-dabadi font-semibold hover:animate-pulse" href="">Ir al artículo</a>
+          </p>
+
+        </article>
       </section>
     </main>
   
