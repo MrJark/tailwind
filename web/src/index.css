@@ -63,11 +63,11 @@
     }
 
     #card {
-        @apply flex-1 rounded-xl h-80 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 cursor-pointer transition duration-300 hover:bg-neutral-900 hover:shadow-md hover:shadow-slate-600 md:h-60 md:m-2 lg:h-80 lg:m-5 
+        @apply flex-1 rounded-xl h-72 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 cursor-pointer transition duration-300 hover:bg-neutral-900  hover:shadow-slate-600 hover:shadow-header3D md:h-60 md:m-2 lg:h-80 lg:m-5 
     }
 
     .card-icon {
-        @apply block w-full h-28 text-6xl text-center mt-12 transition duration-300 md:mt-6 lg:mt-0
+        @apply block w-full h-28 text-6xl text-center mt-12 transition duration-300 md:mt-6 lg:mt-10
     }
 
     .card-category {
@@ -80,5 +80,25 @@
 
     .article-header {
         @apply flex justify-center items-center w-full h-24 text-5xl tracking-widest leading-10
+    }
+
+    .article-item {
+        @apply w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-md hover:shadow-neutral-600 mt-8
+    }
+
+    .article-data-item {
+        @apply grid grid-rows-2 float-right bg-neutral-700 p-2 rounded-lg shadow-md shadow-neutral-600 -m-2.5
+    }
+
+    .article-link {
+        @apply text-xl tracking-wider text-green-dabadi font-semibold hover:animate-pulse
+    }
+
+    .header-aside {
+        @apply block h-11 leading-10 text-2xl
+    }
+
+    .aside-box {
+        @apply w-10/12 h-28 mx-auto mt-5 mb-7 pt-1
     }
 }

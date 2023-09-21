@@ -44,6 +44,7 @@
             </li>
           </ul>
         </nav>
+
       </div>
     </header>
     <section class=" container w-11/12 mx-auto">
@@ -108,20 +109,27 @@
         </div>
       </div>
     </section>
-    <main class="container w-11/12 mx-auto flex flex-row">
-      <aside id="aside" class="min-h-full order-2 flex-none w-72 mt-5">
-        <h3>Search</h3>
-        <div id="sarch-container">
 
-          <form action="">
-            <label for="search">Search</label>
-            <input id="search" name="search" placeholder="Growth" type="text">
-            <button>Search</button>
+    <main class="container w-11/12 mx-auto flex flex-row">
+      
+      <aside id="aside" class="min-h-full order-2 flex-none w-72 mt-5">
+
+        <div id="search-container"
+          class="my-8"
+        >
+          <h3 class="text-2xl mb-2">Busca un concepto</h3>
+          <form action="submit" class="">
+            <input 
+              class="w-10/12 h-8 border-none pl-1.5 rounded-md bg-slate-200 text-gray-900 transition duration-300 outline-none focus:outline-none"
+              id="search" name="search" placeholder="Growth Strategy" type="text">
+            <button class="border-none text-base h-6 bg-transparent pl-2">🔍</button>
           </form>
 
         </div>
-        <h3>Login</h3>
-        <div id="submit-container">
+        <h3 class="text-2xl mb-2">Login</h3>
+        <div id="submit-container"
+          class="aside-box"
+        >
 
           <form action="submit">
             <div>
@@ -140,7 +148,7 @@
         </div>
 
         <h3>Social Media</h3>
-        <div id="social">
+        <div id="social" class="aside-box">
           <div class="x">
             <a href="#">𝕏</a>
             <p>𝕏</p>
@@ -159,11 +167,11 @@
       <section class="flex-grow order-1 mr-10 rounded mt-5 mx-auto">
         <h2 class="article-header">Últimos artículos</h2>
 
-        <article class="w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-lg hover:shadow-neutral-600 mt-8">
+        <article class="article-item">
 
-          <div class="grid grid-row-2 float-right bg-neutral-700 p-2 rounded-lg shadow-md shadow-neutral-600 -m-2.5">
+          <div class="article-data-item">
             <span>Fecha: {new Data}</span>
-            <span class="font-medium">Categorías: <b class="text-yellow-300">Growth</b></span>
+            <p class="font-medium">Categorías: <span class="text-yellow-300">Growth</span></p>
           </div>
 
           <h4 class="text-gray-100 text-3xl m-1">
@@ -176,13 +184,13 @@
           </p>
 
           <p class=" mt-3">
-            <a class="text-xl text-green-dabadi font-semibold hover:animate-pulse" href="">Ir al artículo</a>
+            <a class="article-link" href="">Ir al artículo</a>
           </p>
 
         </article>
-        <article class="w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-lg hover:shadow-neutral-600 mt-8">
+        <article class="article-item">
 
-          <div class="grid grid-row-2 float-right bg-neutral-700 p-2 rounded-lg shadow-md shadow-neutral-600 -m-2.5">
+          <div class="article-data-item">
             <span>Fecha: {new Data}</span>
             <span class="font-medium">Categorías: <b class="text-blue-300">Behavioral</b></span>
           </div>
@@ -197,13 +205,13 @@
           </p>
 
           <p class=" mt-3">
-            <a class="text-xl text-green-dabadi font-semibold hover:animate-pulse" href="">Ir al artículo</a>
+            <a class="article-link" href="">Ir al artículo</a>
           </p>
 
         </article>
-        <article class="w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-lg hover:shadow-neutral-600 mt-8">
+        <article class="article-item">
 
-          <div class="grid grid-row-2 float-right bg-neutral-700 p-2 rounded-lg shadow-md shadow-neutral-600 -m-2.5">
+          <div class="article-data-item">
             <span>Fecha: {new Data}</span>
             <span class="font-medium">Categorías: <b class="text-green-300">Startups</b></span>
           </div>
@@ -218,7 +226,7 @@
           </p>
 
           <p class=" mt-3">
-            <a class="text-xl text-green-dabadi font-semibold hover:animate-pulse" href="">Ir al artículo</a>
+            <a class="article-link" href="">Ir al artículo</a>
           </p>
 
         </article>

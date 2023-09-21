@@ -18,7 +18,8 @@ export default {
         'banner-position': '-800px -200px', // para que se vea el cohete en el banner
       },
       boxShadow: {
-        header3D: '0px 1px #393d3f'
+        header3D: '0px 1px #393d3f',
+        box: '0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px 0px white insert, 0px -3px 1px rgba(0, 0, 0, 0.3) insert'
       },
       fontFamily: {
         ubuntu: 'Ubuntu, ui-serif'
