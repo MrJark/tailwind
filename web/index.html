@@ -126,41 +126,61 @@
           </form>
 
         </div>
-        <h3 class="text-2xl mb-2">Login</h3>
+        <h3 class="text-2xl">Login</h3>
         <div id="submit-container"
           class="aside-box"
         >
+          <div class="block justify-start items-center">
+            <form action="submit">
+              <label
+                class="flex mb-1 text-lg"
+                for="name"
+              >Nombre</label>
+              <input
+              class="w-full h-8 border-none pl-1.5 rounded-md bg-slate-200 text-gray-900 transition duration-300 outline-none focus:outline-none"  
+              id="name" name="name" placeholder="Chema" type="text" autocomplete="name">
 
-          <form action="submit">
-            <div>
-              <label for="name">Nombre</label>
-              <input id="name" name="name" placeholder="Chema" type="text" autocomplete="name">
+              <label
+                class="block mt-4 mb-1 text-lg"
+                for="email"
+              >Email</label>
+              <input 
+                class="w-full h-8 border-none pl-1.5 rounded-md bg-slate-200 text-gray-900 transition duration-300 outline-none focus:outline-none"
+                id="email" name="email" placeholder="chema@example.com" type="email" autocomplete="email"
+              >
+              <label
+                class="block mt-4 mb-1 text-lg"
+                for="password"
+              >Password</label>
+              <input 
+                class="w-full h-8 border-none pl-1.5 rounded-md bg-slate-200 text-gray-900 transition duration-300 outline-none focus:outline-none"
+                id="password" name="password" placeholder="********" type="password" autocomplete="email"
+              >
+
+              <button
+                class="w-full flex flex-col justify-center items-center mt-10 mb-8 rounded-md px-3 py-1 font-semibold tracking-wider text-lg bg-gradient-to-r from-green-dabadi to-purple-dabadi text-gray-900 hover:shadow-md hover:shadow-green-dabadi "
+              >Log In</button>
+            </form>
+          </div>
+
+          <div>
+            <h3 class="text-2xl mb-1.5">Social Media</h3>
+            <div id="social" class="aside-box">
+              <div class="x">
+                <a href="#">𝕏</a>
+                <p>𝕏</p>
+              </div>
+              <div class="linkedin">
+                <a href="#">LinkedIn</a>
+                <p>LinkedIn</p>
+              </div>
+              <div class="web">
+                <a href="#">mrjark</a>
+                <p>mrjark</p>
+              </div>
             </div>
-
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" placeholder="chema@example.com" type="email" autocomplete="email">
-            </div>
-
-            <button>Log In</button>
-
-          </form>
-        </div>
-
-        <h3>Social Media</h3>
-        <div id="social" class="aside-box">
-          <div class="x">
-            <a href="#">𝕏</a>
-            <p>𝕏</p>
           </div>
-          <div class="linkedin">
-            <a href="#">LinkedIn</a>
-            <p>LinkedIn</p>
-          </div>
-          <div class="web">
-            <a href="#">mrjark</a>
-            <p>mrjark</p>
-          </div>
+          
         </div>
       </aside>
 
