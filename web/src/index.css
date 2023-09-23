@@ -63,7 +63,7 @@
     }
 
     #card {
-        @apply flex-1 rounded-xl h-72 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 cursor-pointer transition duration-300 hover:bg-neutral-900  hover:shadow-slate-600 hover:shadow-header3D md:h-60 md:m-2 lg:h-80 lg:m-5 
+        @apply flex-1 rounded-xl h-72 shadow-sm shadow-blue-300/20 bg-neutral-800 pl-2 pr-2 cursor-pointer transition duration-300 hover:bg-neutral-900  hover:shadow-slate-600 hover:shadow-box md:h-60 md:m-2 lg:h-80 lg:m-5 
     }
 
     .card-icon {
@@ -83,7 +83,7 @@
     }
 
     .article-item {
-        @apply w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-md hover:shadow-neutral-600 mt-8
+        @apply w-full h-auto bg-neutral-800 p-4 rounded-xl shadow-sm shadow-neutral-700 hover:shadow-box hover:shadow-neutral-700 mt-8
     }
 
     .article-data-item {
