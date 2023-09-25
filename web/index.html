@@ -8,7 +8,7 @@
     <title>Tailwind Web</title>
   </head>
   <body 
-    class="m-2 font-ubuntu bg-neutral-900 text-gray-200 "
+    class="m-2 font-ubuntu bg-neutral-900 text-gray-200"
     >
     <header 
       id="header"
@@ -47,6 +47,7 @@
 
       </div>
     </header>
+
     <section class=" container w-11/12 mx-auto">
 
       <div id="banner"
@@ -110,9 +111,9 @@
       </div>
     </section>
 
-    <main class="container w-11/12 mx-auto flex flex-row">
+    <main class="container w-11/12 h-fit mx-auto flex xs:flex-col md:flex-row">
       
-      <aside id="aside" class="min-h-full order-2 flex-none w-72 mt-5">
+      <aside id="aside" class="min-h-full order-2 flex-none w-72 mt-5 xs:hidden">
 
         <div id="search-container"
           class="my-8"
@@ -203,7 +204,7 @@
         </div>
       </aside>
 
-      <section class="flex-grow order-1 mr-10 rounded mt-5 mx-auto">
+      <section class="flex-grow order-1 mr-10 rounded mt-5 mx-auto xs:mr-0">
         <h2 class="article-header">Últimos artículos</h2>
 
         <article class="article-item">
@@ -270,6 +271,7 @@
 
         </article>
       </section>
+
     </main>
   
 
